@@ -1,3 +1,8 @@
+// Adekanmi Israel
+// adekanmiisrael8@gmail.com
+// github.com/Israel-Adekanmi
+
+
 // Thought Process
 
 // Basically the quick sort works with the divide and conquer method
