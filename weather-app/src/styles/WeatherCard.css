@@ -6,7 +6,6 @@ body {
     background-color: #004080; /* Blue background */
     color: white;
     min-height: 100vh;
-    display: flex;
     justify-content: center;
     align-items: center;
   }
