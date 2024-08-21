@@ -1,10 +1,11 @@
 .app-container {
   height: 100vh;
-  width: 100vw;
+  width: 100vh;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #87CEFA 30%, #1E90FF 100%);
+  background: #004080;
 }
 
 body {

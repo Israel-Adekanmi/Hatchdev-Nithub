@@ -1,82 +1,144 @@
-/* WeatherCard.css */
-
-.container {
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: #004080; /* Blue background */
+    color: white;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container styles */
+  .container {
+    text-align: center;
+    padding: 20px;
     width: 100%;
     max-width: 400px;
-    text-align: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+    box-sizing: border-box;
+    background-color: #004080; /* Ensures no conflicting background color */
   }
   
+  /* Logo styles */
+  .logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Title styles */
   .title {
-    font-size: 2.5rem;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    white-space: nowrap;
+  }
+  
+  /* Description styles */
+  .description {
+    font-size: 1.2em;
     margin-bottom: 20px;
     color: white;
-    white-space: nowrap; 
-  }
-
-  .description {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    color: #ffffff;
   }
   
+  /* Input container styles */
   .input-container {
-    width: 100%;
     margin-bottom: 20px;
   }
   
   .input {
+    width: 100%;
     padding: 10px;
-    font-size: 16px;
     border-radius: 5px;
-    border: 2px solid #1E90FF;
-    width: 100%; 
-    max-width: 300px;
-    margin-bottom: 10px;
+    border: 2px solid #0059b3;
+    font-size: 1em;
+    box-sizing: border-box;
   }
   
+  /* Button styles */
   .button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
+    width: 80%; /* Reduced button width */
+    padding: 10px;
+    background-color: #4990d7;
     border: none;
-    background-color: #1E90FF;
-    color: #fff;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
     cursor: pointer;
     margin-top: 10px;
+    transition: background-color 0.3s;
   }
   
-  .loading {
-    font-size: 1rem;
-    color: yellow;
-    margin-top: 10px;
+  .button:hover {
+    background-color: #0073e6;
   }
   
+  /* Loading and error message styles */
+  .loading,
   .error {
+    margin-top: 20px;
+    font-size: 1.2em;
     color: yellow;
-    margin-top: 20px;
   }
   
+  /* Weather card styles */
   .card {
-    background-color: #1E90FF;
-    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px; /* Increased padding for more height */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
     width: 100%;
-    max-width: 300px;
-    color: #fff;
-    margin-top: 20px;
+    max-width: 500px; /* Increased card width */
   }
   
-
-  .logo {
-    width: 300px;
-    height: auto;
-    margin-bottom: 10px; 
+  /* Responsive design */
+  @media screen and (max-width: 768px) {
+    .title {
+      font-size: 1.8em;
+    }
+    
+    .description {
+      font-size: 1em;
+    }
+  
+    .input {
+      font-size: 0.9em;
+    }
+  
+    .button {
+      font-size: 0.9em;
+    }
+  
+    .card {
+      padding: 20px;
+      max-width: 450px; /* Adjusted card width for smaller screens */
+    }
   }
+  
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 1.5em;
+    }
+  
+    .description {
+      font-size: 0.9em;
+    }
+  
+    .input {
+      font-size: 0.8em;
+    }
+  
+    .button {
+      font-size: 0.8em;
+      width: 100%; /* Full-width button on small screens */
+    }
+  
+    .card {
+      padding: 15px;
+      max-width: 400px; /* Further adjusted card width for very small screens */
+    }
+  }
+  
