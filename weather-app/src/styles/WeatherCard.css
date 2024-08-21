@@ -25,15 +25,17 @@ body {
   .logo {
     width: 300px;
     height: auto;
-    margin-bottom: 10px;
   }
   
   /* Title styles */
   .title {
     font-size: 2.2em;
-    margin-bottom: 10px;
     color: #ffffff;
     white-space: nowrap;
+  }
+
+  .small {
+    margin-top: 100px;
   }
   
   /* Description styles */

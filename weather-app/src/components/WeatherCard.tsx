@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../styles/WeatherCard.css";
-import logo from '../assets/logo.png';
+import logo from "../assets/logo.png";
 
 const WeatherCard: React.FC = () => {
   const [city, setCity] = useState<string>("");
@@ -14,7 +14,7 @@ const WeatherCard: React.FC = () => {
   const API_KEY = "fd7c266167ec74a8471ac9423bd316fb";
 
   const getWeather = async () => {
-    setLoading(true)
+    setLoading(true);
     try {
       const response = await axios.get(
         `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
@@ -33,11 +33,14 @@ const WeatherCard: React.FC = () => {
 
   return (
     <div className="container">
+      <div className="small">
         <img src={logo} alt="Izzy-Weather Forecast Logo" className="logo" />
-      <h1 className="title">Izzy-Weather Forecast App</h1>
+        <h1 className="title">Izzy-Weather Forecast App</h1>
+      </div>
 
       <p className="description">
-        Get accurate weather forecasts for your location by entering your city or state below.
+        Get accurate weather forecasts for your location by entering your city
+        or state below.
       </p>
 
       <div className="input-container">
