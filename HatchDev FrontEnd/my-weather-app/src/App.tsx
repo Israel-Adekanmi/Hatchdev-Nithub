@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import WeatherApp from './components/WeatherSection';
+import Cities from './components/CitiesSection';
+import Map from './components/MapSection';
+import SettingsSection from './components/SettingsSection';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className="app-container">
+                <Sidebar />
+                <Routes>
+                    <Route path="/weather" element={<WeatherApp />} />
+                    <Route path="/cities" element={<Cities />} />
+                    <Route path="/map" element={<Map />} />
+                    <Route path="/settings" element={<SettingsSection />} />
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
