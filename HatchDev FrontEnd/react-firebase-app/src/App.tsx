@@ -1,27 +1,29 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { app } from '../firebase';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import { useEffect, useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import { app } from "../firebase";
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 
 function App() {
-  const [count, setCount] = useState(0)
-  
+  const [count, setCount] = useState(0);
+
   const db = getFirestore(app);
-  
+
   // Get a list of cities from your database
   async function getCities(db: any) {
-    const citiesCol = collection(db, 'cities');
+    const citiesCol = collection(db, "cities");
     const citySnapshot = await getDocs(citiesCol);
-    const cityList = citySnapshot.docs.map(doc => doc.data());
-    return cityList;
+    const cityList = citySnapshot.docs.map((doc) => doc.data());
+    console.log(cityList);
   }
 
   useEffect(() => {
     getCities(db);
-  }, []);
+  }, [db]);
   
+
   return (
     <>
       <div>
@@ -45,7 +47,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
