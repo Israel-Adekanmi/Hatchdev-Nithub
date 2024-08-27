@@ -1,0 +1,134 @@
+.head {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.man {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1F1F26;
+}
+
+.foot {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #426666;
+}
+
+.textOne {
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    color: #1F1F26;
+}
+
+
+.numHead {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.numFoot {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #7B9292;
+}
+
+.txtSix {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #7B9292;
+}
+
+.txtSev {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.bg-three {
+    background-color: #231A36;
+}
+
+.follow {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F1F26;
+}
+
+.engage {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ADADBA;
+}
+
+.rebel {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #3B3B43;
+}
+
+.content {
+    margin-top: 225px;
+}
+
+.week {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+    color: #6D6D6D;
+}
+
+.roh {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #1C1C1D;
+}
+
+.ceo {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #9C988F;
+}
+
+.made {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #231A36;
+}
+
+.sub {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.join {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    color: #FFFFFFD4;
+
+}

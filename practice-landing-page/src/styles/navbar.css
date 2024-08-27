@@ -1,0 +1,22 @@
+.head1 {
+    font-family: 'Lekton', sans-serif; /* Ensure you have the Lekton font included */
+    font-size: 34px;
+    font-weight: 700; 
+    line-height: 40px; /* Adjust to match other elements if needed */
+  }
+  
+  .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* Ensure consistency with other text */
+  }
+  
+  .request-demo {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px; /* Adjust to match other elements if needed */
+    background-color: #FFFFFF33;
+    text-align: center;
+  }
